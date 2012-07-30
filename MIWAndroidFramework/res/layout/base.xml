@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+    <com.myideaway.newsreader.view.NavigationBar
+            android:id="@+id/navigationBar"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="44dp"
+            android:layout_alignParentTop="true"
+            android:gravity="center_vertical">
+
+    </com.myideaway.newsreader.view.NavigationBar>
+
+    <com.myideaway.newsreader.view.ToolBar
+            android:id="@+id/toolBar"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="44dp"
+            android:layout_alignParentBottom="true"
+            android:gravity="center_vertical">
+
+    </com.myideaway.newsreader.view.ToolBar>
+
+    <RelativeLayout
+            android:id="@+id/mainRelativeLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_below="@id/navigationBar"
+            android:layout_above="@id/toolBar">
+    </RelativeLayout>
+
+    <View
+            android:id="@+id/lockMainViewMask"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@drawable/lock_mask_bg"
+            android:visibility="gone">
+    </View>
+
+    <com.myideaway.newsreader.view.TipMessageBar
+            android:id="@+id/tipMessageBar"
+            android:layout_width="fill_parent"
+            android:layout_height="30dp"
+            android:visibility="gone"/>
+
+</RelativeLayout>

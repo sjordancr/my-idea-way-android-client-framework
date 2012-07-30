@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">ACTIVITY_ENTRY_NAME</string>
+    <string name="loading_new_data">Loading</string>
+    <string name="refreshing">Refreshing</string>
+</resources>
